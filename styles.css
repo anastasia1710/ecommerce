@@ -1,0 +1,533 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header */
+.header {
+  position: relative;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.nav_list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.nav_link:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.logo img {
+  width: 306px;
+  height: 19px;
+}
+
+/* Mobile_menu */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 3px auto;
+  background-color: #000;
+}
+
+.mobile_nav_left {
+  display: none;
+  flex-direction: column;
+}
+
+.mobile_nav_right {
+  display: none;
+}
+/* Mobile_menu end */
+
+.hero_image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero_image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* Масштабирует изображение для полного покрытия */
+}
+
+.hero_content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: left;
+  color: white;
+}
+
+.hero_content .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 100px;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.hero_button {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 15px 30px;
+  margin-top: 20px;
+  transition: background-color 0.3s, color 0.3s; /* Плавный переход для фонового цвета и цвета текста */
+}
+
+.hero_button:hover {
+  background-color: white; /* Цвет фона при наведении */
+  color: black; /* Цвет текста при наведении */
+}
+
+/* New in */
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 160px;
+}
+
+.new_in_button {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 15px 30px;
+  margin-top: 20px;
+  transition: background-color 0.3s, color 0.3s; /* Плавный переход для фонового цвета и цвета текста */
+}
+
+.new_in_button:hover {
+  background-color: black; /* Цвет фона при наведении */
+  color: white; /* Цвет текста при наведении */
+}
+
+.cards_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding-top: 60px;
+}
+
+.list_item {
+  max-width: 280px;
+  min-width: 148px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: transform 0.1s ease-in-out;
+}
+
+.list_item:hover {
+  transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.list_item img {
+  width: 100%;
+}
+
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #444444;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.list_item p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Summer collection */
+.summer_collection .container {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 160px;
+}
+
+.summer_collection_content {
+  max-width: 500px;
+}
+
+.summer_collection_content p {   
+  max-width: 370px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.summer_collection_image img {
+  max-width: 600px;
+}
+
+.summer_collection_button {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 15px 30px;
+  margin-top: 20px;
+  transition: background-color 0.3s, color 0.3s; /* Плавный переход для фонового цвета и цвета текста */
+}
+
+.summer_collection_button:hover {
+  background-color: black; /* Цвет фона при наведении */
+  color: white; /* Цвет текста при наведении */
+}
+
+/* About us */
+.about_us_image {
+  margin-top: 160px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.about_us_image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* Масштабирует изображение для полного покрытия */
+}
+
+.about_us_content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  color: white;
+}
+
+.about_us_content .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.about_us_content .container p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 64px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 1090px;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.about_us_button {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 15px 30px;
+  margin-top: 20px;
+  transition: background-color 0.3s, color 0.3s; /* Плавный переход для фонового цвета и цвета текста */
+}
+
+.about_us_button:hover {
+  background-color: white; /* Цвет фона при наведении */
+  color: black; /* Цвет текста при наведении */
+}
+
+/* Follow us */
+.follow_us {
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+.follow_us_content {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.follow_us h4 {
+  color: #444444;
+  margin-bottom: 20px;
+}
+
+.instagram_pics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.instagram_pic img {
+  max-width: 220px;
+}
+
+/* Footer */
+hr {
+  color: #444444;
+}
+
+.footer_list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.footer_list_group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer_left {
+  display: flex;
+  gap: 160px;
+}
+
+.footer_list_group h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.footer_list_group a {
+  color: #444444;
+}
+
+.footer_list_group a:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.container .info {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-size: 12px;
+  color: #444444;
+}
+
+@media (max-width: 1200px) {
+  .instagram_pic img {
+    max-width: 170px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  .about_us_content .container p {
+    font-size: 50px;
+  }
+
+  .summer_collection .container {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 1000px) {
+  .instagram_pic:nth-of-type(1),
+  .instagram_pic:nth-of-type(5) {
+    display: none;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .about_us_content .container p {
+    font-size: 26px;
+  }
+
+  .summer_collection_image img {
+    max-width: 300px;
+  }
+
+  .mobile_nav_left, .mobile_nav_right {
+    display: flex;
+  }
+
+  .nav_list {
+    display: none;
+  }
+
+  .top {
+    margin-top: 40px;
+  }
+
+  .summer_collection .container, .about_us_image, .follow_us  {
+    margin-top: 100px;
+  }
+
+  .summer_collection .container {
+    margin-top: 100px;
+  }
+
+  .list_item {
+    max-width: 180px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .summer_collection_content p {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 650px) {
+  .summer_collection .container {
+    flex-direction: column;
+  }
+
+  .summer_collection .container {
+    text-align: center;
+  }
+
+  .summer_collection .container img {
+    max-width: 500px;
+    padding-bottom: 40px;
+  }
+
+  .summer_collection .container p {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 550px) {
+  .instagram_pic img {
+    max-width: 140px;
+  }
+
+  .list_item {
+    max-width: 240px;
+  }
+
+  h1 {
+    font-size: 64px;
+  }
+
+  .logo img {
+    width: 240px;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .logo img {
+    width: 200px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .hero_button, .summer_collection_button, .about_us_button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .summer_collection .container img  {
+    max-width: 340px;
+  }
+
+  .instagram_pic img {
+    max-width: 100px;
+  }
+
+  .about_us_content .container p {
+    font-size: 24px;
+  }
+
+  .hero_image img {
+    object-position: 70%;
+    height: 600px;
+  }
+
+  .hero_content {
+    top: 80%;
+  }
+
+  .footer_left {
+    gap: 75px;
+  }
+
+  .list_item {
+    max-width: 320px;
+  }
+
+  .about_us_image img {
+    height: 400px;
+  }
+}
+
