@@ -91,7 +91,7 @@ ul {
   width: 100%;
   max-width: 100%;
   height: auto;
-  object-fit: cover; /* Масштабирует изображение для полного покрытия */
+  object-fit: cover;
 }
 
 .hero_content {
@@ -124,12 +124,12 @@ h1 {
   border: 1px solid white;
   padding: 15px 30px;
   margin-top: 20px;
-  transition: background-color 0.3s, color 0.3s; /* Плавный переход для фонового цвета и цвета текста */
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .hero_button:hover {
-  background-color: white; /* Цвет фона при наведении */
-  color: black; /* Цвет текста при наведении */
+  background-color: white;
+  color: black;
 }
 
 /* New in */
@@ -151,12 +151,12 @@ h2 {
   border: 1px solid black;
   padding: 15px 30px;
   margin-top: 20px;
-  transition: background-color 0.3s, color 0.3s; /* Плавный переход для фонового цвета и цвета текста */
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .new_in_button:hover {
-  background-color: black; /* Цвет фона при наведении */
-  color: white; /* Цвет текста при наведении */
+  background-color: black;
+  color: white;
 }
 
 .cards_list {
@@ -181,7 +181,7 @@ h2 {
 }
 
 .list_item:hover {
-  transform: scale(1.05); /* Увеличение при наведении */
+  transform: scale(1.05);
 }
 
 .list_item img {
@@ -231,12 +231,12 @@ h3 {
   border: 1px solid black;
   padding: 15px 30px;
   margin-top: 20px;
-  transition: background-color 0.3s, color 0.3s; /* Плавный переход для фонового цвета и цвета текста */
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .summer_collection_button:hover {
-  background-color: black; /* Цвет фона при наведении */
-  color: white; /* Цвет текста при наведении */
+  background-color: black;
+  color: white;
 }
 
 /* About us */
@@ -250,7 +250,7 @@ h3 {
 .about_us_image img {
   max-width: 100%;
   height: auto;
-  object-fit: cover; /* Масштабирует изображение для полного покрытия */
+  object-fit: cover;
 }
 
 .about_us_content {
@@ -287,12 +287,12 @@ h4 {
   border: 1px solid white;
   padding: 15px 30px;
   margin-top: 20px;
-  transition: background-color 0.3s, color 0.3s; /* Плавный переход для фонового цвета и цвета текста */
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .about_us_button:hover {
-  background-color: white; /* Цвет фона при наведении */
-  color: black; /* Цвет текста при наведении */
+  background-color: white;
+  color: black;
 }
 
 /* Follow us */
