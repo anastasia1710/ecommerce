@@ -45,4 +45,3 @@ function generateProductElements() {
 }
 
 document.addEventListener("DOMContentLoaded", generateProductElements);
-что
