@@ -94,12 +94,23 @@
       <div class="container">
         <div class="top">
           <h2>New in</h2>
-          <a href="#" class="new_in_button">Shop all</a>
+          <div class="products--sorting">
+            <label for="sort">Sort by:</label>
+            <select id="sort" class="sort--dropdown">
+              <option value="name">Name</option>
+              <option value="lowest">Lowest price</option>
+              <option value="highest">Highest price</option>
+            </select>
+          </div>
         </div>
       
         <ul class="cards_list">
           <!-- JS -->
         </ul>
+        
+        <div class="button_container">
+          <a href="#" class="new_in_button">Shop all</a>
+        </div>
       </div>
     </div>
 

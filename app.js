@@ -1,3 +1,4 @@
+// Generating products
 const products = [
   {
     id: 1,
@@ -25,10 +26,11 @@ const products = [
   },
 ];
 
-function generateProductElements() {
+function generateProductElements(productsToDisplay) {
   const productContainer = document.querySelector(".cards_list");
+  productContainer.innerHTML = "";
 
-  products.forEach((product) => {
+  productsToDisplay.forEach((product) => {
     console.log("Creating product:", product.name); // Shows that the product was created
 
     const productElement = document.createElement("li");
@@ -44,4 +46,39 @@ function generateProductElements() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", generateProductElements);
+
+// Sorting products
+function sortProductsByName() {
+  const sortedProducts = [...products].sort((a, b) => a.name.localeCompare(b.name));
+  generateProductElements(sortedProducts);
+}
+
+function sortProductsByLowestPrice() {
+  const sortedProducts = [...products].sort((a, b) => parseFloat(a.price.slice(1)) - parseFloat(b.price.slice(1)));
+  generateProductElements(sortedProducts);
+}
+
+function sortProductsByHighestPrice() {
+  const sortedProducts = [...products].sort((a, b) => parseFloat(b.price.slice(1)) - parseFloat(a.price.slice(1)));
+  generateProductElements(sortedProducts);
+}
+
+
+document.getElementById("sort").addEventListener("change", (event) => {
+  switch (event.target.value) {
+    case "name":
+      sortProductsByName();
+      break;
+    case "lowest":
+      sortProductsByLowestPrice();
+      break;
+    case "highest":
+      sortProductsByHighestPrice();
+      break;
+  }
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  generateProductElements(products);
+});

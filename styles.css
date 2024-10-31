@@ -79,6 +79,7 @@ ul {
 .mobile_nav_right {
   display: none;
 }
+
 /* Mobile_menu end */
 
 .hero_image {
@@ -146,11 +147,28 @@ h2 {
   margin-top: 160px;
 }
 
+label {
+  margin-right: 15px;
+}
+
+.sort--dropdown {
+  border: 1px solid black;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+}
+
 .new_in_button {
   display: inline-block;
   border: 1px solid black;
   padding: 15px 30px;
-  margin-top: 20px;
+  margin-top: 80px;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -161,7 +179,7 @@ h2 {
 
 .cards_list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 14px;
   padding-top: 60px;
@@ -469,7 +487,7 @@ hr {
   }
 
   .list_item {
-    max-width: 240px;
+    max-width: 450px;
   }
 
   h1 {
@@ -479,6 +497,10 @@ hr {
   .logo img {
     width: 240px;
     height: auto;
+  }
+
+  .cards_list {
+    justify-content: center;
   }
 }
 
@@ -490,6 +512,10 @@ hr {
 
   h1 {
     font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
   }
 
   .hero_button, .summer_collection_button, .about_us_button {
